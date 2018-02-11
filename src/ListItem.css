@@ -1,3 +1,65 @@
 .ListItem {
     list-style-type: none;
+    border-bottom: 1px solid #E8EBEE;
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+}
+.ListItem:hover {
+    background-color: #E8EBEE;
+}
+.ListItem.active {
+    background-color: #FFF;
+}
+.ListItemDetails {
+    padding: 30px;
+    border-right: 1px solid #E8EBEE;
+    flex: 2;
+    display: flex;
+}
+.ListItemImage {
+    margin-right: 30px;
+    height: 100px;
+}
+.ListItemDetailsInfo {
+    display: flex;
+    flex-direction: column;
+}
+.ListItemDetailsTitle {
+    color: #4C4E51;
+    font-size: 16px;
+    margin: 0;
+    flex: 2;
+}
+.ListItemDetailsRatingGenre {
+    color: #7B8B95;
+    margin: 10px 0 0 0;
+    line-height: 1.5em;
+}
+.ListItemRankDetails {
+    display: flex;
+    flex-direction: column;
+}
+.ListItemRankDetailsRank {
+    color: #7B8B95;
+    font-size: 43px;
+    padding: 30px;
+    border-bottom: 1px solid #E8EBEE;
+}
+.ListItemRankDetailsVotes {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+.ListItemRankDetailsVotesPositive {
+    color: #05BF80;
+    border-right: 1px solid #E8EBEE;
+    padding: 20px;
+    flex: 1;
+}
+.ListItemRankDetailsVotesNegative {
+    color: #FF7A6C;
+    padding: 20px;
+    flex: 1;
 }

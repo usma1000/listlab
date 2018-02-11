@@ -9,7 +9,7 @@ function List(props) {
         <ul className="List">
             {Object
                 .keys(Movies)
-                .map((m) => <ListItem key={m} title={m.title} rating={m.rating} />)
+                .map((m) => <ListItem key={m} title={Movies[m].title} rating={Movies[m].rating} />)
             }
         </ul>
     );
