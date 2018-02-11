@@ -4,6 +4,7 @@
     display: flex;
     font-weight: bold;
     font-size: 14px;
+    cursor: pointer;
 }
 .ListItem:hover {
     background-color: #E8EBEE;
@@ -57,9 +58,25 @@
     border-right: 1px solid #E8EBEE;
     padding: 20px;
     flex: 1;
+    transition: all .2s;
+}
+.ListItemRankDetailsVotesPositive:hover {
+    color: #FFF;
+    background-color: #05BF80;
+}
+.ListItemRankDetailsVotesPositive:before {
+    content: '+';
 }
 .ListItemRankDetailsVotesNegative {
     color: #FF7A6C;
     padding: 20px;
     flex: 1;
+    transition: all .2s;
+}
+.ListItemRankDetailsVotesNegative:hover {
+    color: #FFF;
+    background-color: #FF7A6C;
+}
+.ListItemRankDetailsVotesNegative:before {
+    content: '-';
 }
