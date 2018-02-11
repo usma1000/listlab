@@ -6,9 +6,7 @@
     font-size: 14px;
     cursor: pointer;
 }
-.ListItem:hover {
-    background-color: #E8EBEE;
-}
+.ListItem:hover,
 .ListItem.active {
     background-color: #FFF;
 }
@@ -46,6 +44,7 @@
     font-size: 43px;
     padding: 30px;
     border-bottom: 1px solid #E8EBEE;
+    text-align: center;
 }
 .ListItemRankDetailsVotes {
     display: flex;
