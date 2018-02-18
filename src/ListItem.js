@@ -9,13 +9,16 @@ function ListItem(props) {
                 <div className="ListItemDetailsInfo">
                     <p className="ListItemDetailsTitle">{props.title}</p>
                     <p className="ListItemDetailsRatingGenre">
-                        {props.rating}<br/>
-                        Genre
+                        {props.rating}
+                        &nbsp;
+                        <i class="fas fa-star"></i>
+                        <br/>
+                        {props.genre}
                     </p>
                 </div>
             </div>
             <div className="ListItemRankDetails">
-                <div className="ListItemRankDetailsRank">#15</div>
+                <div className="ListItemRankDetailsRank">#{props.rank}</div>
                 <div className="ListItemRankDetailsVotes">
                     <div className="ListItemRankDetailsVotesPositive">3</div>
                     <div className="ListItemRankDetailsVotesNegative">1</div>
