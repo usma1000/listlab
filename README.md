@@ -1,3 +1,16 @@
+##ToDo
+Make list drag and droppable:
+https://github.com/react-dnd/react-dnd/tree/master/examples/04%20Sortable/Simple
+http://react-dnd.github.io/react-dnd/
+
+Add Firebase for backend
+
+Add Auth0 for authentication
+
+List animation:
+https://motion.ant.design/exhibition/demo/list-anim
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
