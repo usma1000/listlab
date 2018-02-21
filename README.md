@@ -1,15 +1,16 @@
 ##ToDo
-Make list drag and droppable:
-https://github.com/react-dnd/react-dnd/tree/master/examples/04%20Sortable/Simple
-http://react-dnd.github.io/react-dnd/
+1. Integrate OMDB to pull real data
+1. Replace sample data with real data
+1. Add Auth0 for authentication
+1. Custom lists feature
+1. Make list drag and droppable:
+- https://github.com/react-dnd/react-dnd/tree/master/examples/04%20Sortable/Simple
+- http://react-dnd.github.io/react-dnd/
+1. Add Firebase for backend
+1. List animation:
+- https://motion.ant.design/exhibition/demo/list-anim
 
-Add Firebase for backend
-
-Add Auth0 for authentication
-
-List animation:
-https://motion.ant.design/exhibition/demo/list-anim
-
+##React Readme
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
