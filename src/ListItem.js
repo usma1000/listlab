@@ -11,7 +11,7 @@ function ListItem(props) {
                     <p className="ListItemDetailsRatingGenre">
                         {props.rating}
                         &nbsp;
-                        <i class="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
                         <br/>
                         {props.genre}
                     </p>
