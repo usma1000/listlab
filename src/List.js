@@ -1,8 +1,12 @@
 import React from 'react';
-import './List.css'
 import Movies from './sampledata';
+import './List.css'
 
 import ListItem from './ListItem';
+const imdb = require('imdb-api');
+
+// DELETE ME: testing imdb api call
+imdb.get('The Toxic Avenger', { apiKey: '869d3931', timeout: 30000 }).then(console.log).catch(console.log);
 
 function List(props) {
     return(
