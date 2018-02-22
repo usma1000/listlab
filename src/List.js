@@ -7,14 +7,12 @@ import ListItem from './ListItem';
 function List(props) {
     return(
         <ul className="List">
-            {Object
-                .keys(Movies)
-                .map((m,i) => <ListItem 
-                    key={m}
-                    title={Movies[m].title}
-                    rating={Movies[m].rating}
-                    rank={i+1}
-                    genre={Movies[m].genre} />)
+            {Movies.map((m,i) => <ListItem 
+                key={m}
+                title={m.Title}
+                rating={m.Ratings[0].Value}
+                rank={i+1}
+                genre={m.Genre} />)
             }
         </ul>
     );
