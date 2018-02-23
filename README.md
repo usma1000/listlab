@@ -8,7 +8,6 @@
 1. Add Firebase for backend
 1. List animation:
 - https://motion.ant.design/exhibition/demo/list-anim
-1. Favicon
 
 ##React Readme
 
