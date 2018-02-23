@@ -1,6 +1,5 @@
 ##ToDo
 1. Integrate OMDB to pull real data
-1. Replace sample data with real data
 1. Add Auth0 for authentication
 1. Custom lists feature
 1. Make list drag and droppable:
@@ -9,6 +8,7 @@
 1. Add Firebase for backend
 1. List animation:
 - https://motion.ant.design/exhibition/demo/list-anim
+1. Favicon
 
 ##React Readme
 

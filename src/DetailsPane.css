@@ -1,4 +1,5 @@
 .DetailsPane {
     background-color: white;
     padding: 50px 80px;
+    flex: 1;
 }

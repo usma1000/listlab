@@ -5,7 +5,7 @@ class DetailsPane extends Component {
     render() {
         return (
             <div className="DetailsPane">
-                DETAILS PANE
+                (DETAILS PANE)
             </div>
         );
     }
