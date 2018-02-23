@@ -6,12 +6,13 @@ import TopBar from './TopBar';
 
 class DetailsPane extends Component {
     render() {
+        let selectedMovie = this.props.selectedMovie
         return (
             <div className="DetailsPane">
                 <TopBar/>
                 <div>
-                    {Object.keys(Movies[0]).map(function (key) {
-                        return <p>{key}: {Movies[0][key].toString()}</p>;
+                    {Object.keys(selectedMovie).map(function (key) {
+                        return <p>{key}: {selectedMovie[key].toString()}</p>;
                     })}
                 </div>
             </div>
