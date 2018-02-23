@@ -14,8 +14,9 @@ function List(props) {
         <div className="List">
             <Button type="mega" text="+ Suggest a movie"/>
             <ul className="ListUl">
-                {Movies.map((m,i) => <ListItem 
+                {Movies.map((m,i) => <ListItem
                     key={i}
+                    poster={m.Poster}
                     title={m.Title}
                     rating={m.Ratings[0].Value}
                     rank={i+1}

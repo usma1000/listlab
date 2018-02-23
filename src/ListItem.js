@@ -5,7 +5,7 @@ function ListItem(props) {
     return(
         <li className="ListItem">
             <div className="ListItemDetails">
-                <img src="http://via.placeholder.com/100x100" alt="placeholder" className="ListItemImage" />
+                <img src={props.poster} alt={`${props.title} Poster`} className="ListItemImage" />
                 <div className="ListItemDetailsInfo">
                     <p className="ListItemDetailsTitle">{props.title}</p>
                     <p className="ListItemDetailsRatingGenre">
