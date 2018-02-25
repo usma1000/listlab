@@ -4,7 +4,7 @@ import './List.css'
 
 import Button from './Button';
 import ListItem from './ListItem';
-const imdb = require('imdb-api');
+// const imdb = require('imdb-api');
 
 function List(props) {
     return(

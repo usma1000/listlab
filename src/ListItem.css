@@ -46,10 +46,10 @@
     padding: 30px;
     border-bottom: 1px solid #E8EBEE;
     text-align: center;
+    flex: 1;
 }
 .ListItemRankDetailsVotes {
     display: flex;
-    height: 100%;
     align-items: center;
     text-align: center;
 }
