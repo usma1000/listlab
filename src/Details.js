@@ -4,7 +4,7 @@ import './Details.css'
 function Details(props) {
     return (
         <div className="Details">
-            {props.selectedMovie.Title.toString()}
+            <h2>{props.selectedMovie.Title}</h2>
         </div>
     );
 }

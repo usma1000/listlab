@@ -1,4 +1,5 @@
 ##ToDo
+1. Get setState working on list item click!
 1. Integrate OMDB to pull real data
 1. Add Auth0 for authentication
 1. Custom lists feature
