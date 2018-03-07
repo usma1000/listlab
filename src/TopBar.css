@@ -1,5 +1,16 @@
 .TopBar {
-    padding: 24px;
     background-color: white;
     border-bottom: 1px solid #E8EBEE;
+}
+.TopBar--logo {
+    background-image: url("./logo.svg");
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 78px;
+}
+.Search {
+    flex: 1;
+    padding: .75em;
+    text-align: center;
 }

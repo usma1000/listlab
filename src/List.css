@@ -1,3 +1,6 @@
+.List {
+    flex-basis: 600px;
+}
 .ListUl {
     margin: 0;
     padding: 0;

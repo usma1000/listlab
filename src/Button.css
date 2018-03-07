@@ -3,6 +3,7 @@
     border-radius: 0;
     cursor: pointer;
     transition: all .2s;
+    border: none;
 }
 .Button--mega {
     font-size: 20px;
@@ -12,8 +13,12 @@
     background-color: #05BF80;
     box-shadow: inset 0 -2px 0 0 #009C67;
     transition: all .2s;
+    flex-basis: 600px;
 }
 .Button--mega:hover {
     background-image: radial-gradient(circle at top, #2BEDAC, #05BF80);
     box-shadow: 0 4px 20px 0 rgba(5,191,128,0.50), inset 0 -2px 0 0 #009C67;
+}
+.Button--mega:active {
+    background-image: radial-gradient(circle at top, #1BC78E, #01A26C);
 }

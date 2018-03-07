@@ -3,6 +3,7 @@ import Movies from './sampledata';
 import './style.css';
 import './App.css';
 
+import TopBar from './TopBar';
 import LeftBar from './LeftBar';
 import List from './List';
 import DetailsPane from './DetailsPane';
@@ -16,18 +17,22 @@ class App extends Component {
     };
   }
 
-  handleListClick(i) {
+  handleListClick = (i) => {
     // let selectedMovie = this.props.selectedMovie;
     // selectedMovie = i;
-    this.setState({ selectedMovie: i });
+    // this.setState({ selectedMovie: Movies[i] });
+    console.log("it works!");
   }
 
   render() {
     return (
-      <div className="App flex">
-        <LeftBar/>
-        <List handleClick={() => this.handleListClick}/>
-        <DetailsPane selectedMovie={this.state.selectedMovie}/>
+      <div className="App">
+        <TopBar/>
+        <div className="flex">
+          <LeftBar/>
+          <List handleListClick={this.handleListClick} />
+          <DetailsPane selectedMovie={this.state.selectedMovie}/>
+        </div>
       </div>
     );
   }

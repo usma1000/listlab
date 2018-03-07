@@ -1,31 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './ListItem.css';
 
-function ListItem(props) {
-    return(
-        <li className="ListItem" onClick={props.handleClick}>
-            <div className="ListItemDetails">
-                <img src={props.movie.Poster} alt={`${props.movie.Title} Poster`} className="ListItemImage" />
-                <div className="ListItemDetailsInfo">
-                    <p className="ListItemDetailsTitle">{props.movie.Title}</p>
-                    <p className="ListItemDetailsRatingGenre">
-                        {props.movie.imdbRating}
-                        &nbsp;
+class ListItem extends Component {
+    render() {
+        return (
+            <li className="ListItem" onClick={this.props.handleListClick}>
+                <div className="ListItemDetails">
+                    <img src={this.props.movie.Poster} alt={`${this.props.movie.Title} Poster`} className="ListItemImage" />
+                    <div className="ListItemDetailsInfo">
+                        <p className="ListItemDetailsTitle">{this.props.movie.Title}</p>
+                        <p className="ListItemDetailsRatingGenre">
+                            {this.props.movie.imdbRating}
+                            &nbsp;
                         <i className="fas fa-star"></i>
-                        <br/>
-                        {props.movie.Genre}
-                    </p>
+                            <br />
+                            {this.props.movie.Genre}
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className="ListItemRankDetails">
-                <div className="ListItemRankDetailsRank">#{props.rank}</div>
-                <div className="ListItemRankDetailsVotes">
-                    <div className="ListItemRankDetailsVotesPositive">3</div>
-                    <div className="ListItemRankDetailsVotesNegative">1</div>
+                <div className="ListItemRankDetails">
+                    <div className="ListItemRankDetailsRank">#{this.props.rank}</div>
+                    <div className="ListItemRankDetailsVotes">
+                        <div className="ListItemRankDetailsVotesPositive">0</div>
+                        <div className="ListItemRankDetailsVotesNegative">0</div>
+                    </div>
                 </div>
-            </div>
-        </li>
-    );
+            </li>
+        );
+    }
 }
+    
 
 export default ListItem;
