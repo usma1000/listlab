@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import './ListItem.css';
 
 class ListItem extends Component {
+    handleClick = () => {
+        this.props.handleListClick(this.props.movie);
+    }
     render() {
         return (
-            <li className="ListItem" onClick={this.props.handleListClick}>
+            <li className="ListItem" onClick={this.handleClick}>
                 <div className="ListItemDetails">
                     <img src={this.props.movie.Poster} alt={`${this.props.movie.Title} Poster`} className="ListItemImage" />
                     <div className="ListItemDetailsInfo">

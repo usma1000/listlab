@@ -11,17 +11,13 @@ import DetailsPane from './DetailsPane';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.handleListClick = this.handleListClick.bind(this);
     this.state = {
       selectedMovie: Movies[0],
     };
   }
 
-  handleListClick = (i) => {
-    // let selectedMovie = this.props.selectedMovie;
-    // selectedMovie = i;
-    // this.setState({ selectedMovie: Movies[i] });
-    console.log("it works!");
+  handleListClick = (movie) => {
+    this.setState({ selectedMovie: movie });
   }
 
   render() {

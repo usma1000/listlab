@@ -1,12 +1,13 @@
 ##ToDo
-1. Get setState working on list item click!
+1. [Move list into state.](https://reactjs.org/tutorial/tutorial.html#taking-turns)
 1. Integrate OMDB to pull real data
-1. Add Auth0 for authentication
-1. Custom lists feature
+1. Add form to search and add movies to list
+1. Add Firebase for backend
+1. Add Auth0 for authentication or does Firebase have built in auth?
+1. Connect list items to user's account
 1. Make list drag and droppable:
 - https://github.com/react-dnd/react-dnd/tree/master/examples/04%20Sortable/Simple
 - http://react-dnd.github.io/react-dnd/
-1. Add Firebase for backend
 1. List animation:
 - https://motion.ant.design/exhibition/demo/list-anim
 
