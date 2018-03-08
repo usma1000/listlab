@@ -12,8 +12,9 @@
     width: 100%;
     background-color: #05BF80;
     box-shadow: inset 0 -2px 0 0 #009C67;
+    text-shadow: 0 1px #009C67;
     transition: all .2s;
-    flex-basis: 600px;
+    flex-basis: 40vw;
 }
 .Button--mega:hover {
     background-image: radial-gradient(circle at top, #2BEDAC, #05BF80);

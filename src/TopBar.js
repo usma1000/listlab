@@ -9,6 +9,7 @@ function TopBar(props) {
             <div className="TopBar--logo"></div>
             <Button type="mega" text="+ Suggest a movie" />
             <div className="Search">(SEARCH BAR AND OPTIONS GO HERE)</div>
+            <div className="TopBar--avatar">M</div>
         </div>
     );
 }
