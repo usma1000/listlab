@@ -1,5 +1,4 @@
 import React from 'react';
-import Movies from './sampledata';
 import './css/List.css'
 
 import ListItem from './ListItem';

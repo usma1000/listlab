@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Movies from './sampledata';
+import base from './base';
 import './css/style.css';
 import './css/App.css';
 
@@ -9,25 +9,25 @@ import List from './List';
 import DetailsPane from './DetailsPane';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      list: [],
-      selectedMovie: Movies[0],
-    };
+  state = {
+    list: [],
+    selectedMovie: {},
   }
 
-  loadSamples = () => {
-    this.setState({list: Movies});
+  componentDidMount() {
+    this.ref = base.syncState("list", {
+      context: this,
+      state: "list",
+      options: { asArray: true }
+    });
+    this.ref = base.syncState("selectedMovie", {
+      context: this,
+      state: "selectedMovie"
+    });
   }
 
   handleListClick = (movie) => {
     this.setState({ selectedMovie: movie });
-  }
-
-  componentDidMount() {
-    // REMOVE AFTER TESTING
-    this.loadSamples();
   }
 
   render() {
