@@ -1,5 +1,5 @@
 import React from 'react';
-import './Details.css'
+import './css/Details.css'
 
 function Details(props) {
     const { Title, Poster, Genre, Released, Director, Actors, imdbRating, Runtime, Awards, Plot, Website } = props.selectedMovie;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './DetailsPane.css';
+import './css/DetailsPane.css';
 
 import Details from './Details';
 

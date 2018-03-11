@@ -1,5 +1,5 @@
 import React from 'react';
-import './LeftBar.css'
+import './css/LeftBar.css'
 
 import LeftBarLink from './LeftBarLink';
 

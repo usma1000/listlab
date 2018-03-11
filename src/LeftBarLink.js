@@ -1,5 +1,5 @@
 import React from 'react';
-import './LeftBarLink.css'
+import './css/LeftBarLink.css'
 
 function LeftBarLink(props) {
     return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Movies from './sampledata';
-import './style.css';
-import './App.css';
+import './css/style.css';
+import './css/App.css';
 
 import TopBar from './TopBar';
 import LeftBar from './LeftBar';
@@ -12,12 +12,22 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      list: [],
       selectedMovie: Movies[0],
     };
   }
 
+  loadSamples = () => {
+    this.setState({list: Movies});
+  }
+
   handleListClick = (movie) => {
     this.setState({ selectedMovie: movie });
+  }
+
+  componentDidMount() {
+    // REMOVE AFTER TESTING
+    this.loadSamples();
   }
 
   render() {
@@ -26,7 +36,7 @@ class App extends Component {
         <TopBar/>
         <div className="flex">
           <LeftBar/>
-          <List handleListClick={this.handleListClick} />
+          <List movies={this.state.list} handleListClick={this.handleListClick} />
           <DetailsPane selectedMovie={this.state.selectedMovie}/>
         </div>
       </div>
