@@ -3,12 +3,21 @@
     border-bottom: 1px solid #E8EBEE;
 }
 .TopBar--logo {
-    background-color: #2CA3B7;
-    background-image: url("./logo.svg");
-    background-size: 40%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #F1F4F7;
     flex-basis: 78px;
+    text-align: center;
+    padding-top: 7px;
+    transition: all .2s;
+}
+.TopBar--logo svg {
+    width: 30px;
+}
+.TopBar--logo:hover svg g path{
+    fill: #05BF80;
+}
+.TopBar--logo:hover,
+.TopBar--logo.active {
+    background-color: #FFF;
 }
 .Search {
     flex: 1;
@@ -17,7 +26,7 @@
 }
 .TopBar--avatar {
     color: white;
-    background-color: #2CA3B7;
+    background-color: #B0A4FD;
     font-size: 3rem;
     text-align: center;
     line-height: 1px;
