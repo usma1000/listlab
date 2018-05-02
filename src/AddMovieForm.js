@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AddMovieForm(props) {
+const AddMovieForm = (props) => {
     return (
         <form>
             <input type="text" required placeholder="Search by title..." />
