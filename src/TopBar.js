@@ -4,10 +4,6 @@ import './css/TopBar.css'
 
 
 class TopBar extends React.Component {
-    showForm = () => {
-        console.log("find some fucking way to use the damn router")
-    }
-
     render() {
         return (
             <div className="TopBar flex">
@@ -18,7 +14,7 @@ class TopBar extends React.Component {
                         </g>
                     </svg>
                 </div>
-                <Button type="mega" text="+ Suggest a movie" onClick={this.showForm} />
+                <Button type="mega" text="+ Suggest a movie" onClick={this.props.handleShowFormClick} />
                 <div className="Search">(SEARCH BAR AND OPTIONS GO HERE)</div>
                 <div className="TopBar--avatar">M</div>
             </div>

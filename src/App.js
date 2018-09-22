@@ -12,6 +12,7 @@ class App extends Component {
   state = {
     list: [],
     selectedMovie: {},
+    showAddForm: false,
   }
 
   componentDidMount() {
@@ -30,14 +31,18 @@ class App extends Component {
     this.setState({ selectedMovie: movie });
   }
 
+  handleShowFormClick = () => {
+    this.setState({ showAddForm: true });
+  }
+
   render() {
     return (
       <div className="App">
-        <TopBar/>
+        <TopBar handleShowFormClick={this.handleShowFormClick} />
         <div className="flex">
-          <LeftBar/>
+          <LeftBar />
           <List movies={this.state.list} handleListClick={this.handleListClick} />
-          <DetailsPane selectedMovie={this.state.selectedMovie}/>
+          <DetailsPane selectedMovie={this.state.selectedMovie} showAddForm={this.state.showAddForm} />
         </div>
       </div>
     );

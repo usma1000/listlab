@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import AddMovieForm from './AddMovieForm';
+import AddMovieForm from './AddMovieForm';
 
 import './css/DetailsPane.css';
 
@@ -12,9 +12,16 @@ class DetailsPane extends Component {
     }
 
     render() {
+        let showMe;
+
+        if (this.props.showAddForm) {
+            showMe = <AddMovieForm />
+        } else {
+            showMe = <Details selectedMovie={this.props.selectedMovie} />
+        }
         return (
             <div className="DetailsPane">
-                <Details selectedMovie={this.props.selectedMovie}/>
+                {showMe}
             </div>
         );
     }
